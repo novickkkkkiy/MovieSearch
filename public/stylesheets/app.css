@@ -1,0 +1,138 @@
+body,html{
+    margin: 0;
+    padding:0;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background: black;
+    font-family: "Berlin Sans FB";
+    color: rgb(206, 212, 218);
+}
+
+.background{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    background: url('https://images.unsplash.com/photo-1485846234645-a62644f84728?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1940&q=80');
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.container{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    text-align: center;
+    font-weight: 600;
+    font-family: "Berlin Sans FB";
+    text-shadow: 2px 2px 2px black;
+}
+
+.container p{
+    margin: 20px 0;
+    font-size: 2.4rem;
+}
+
+.container input[type='text']{
+    width: 80%;
+    border-radius: 25px 0 0 25px;
+}
+
+.container input[type='submit']{
+    border-radius: 0 25px 25px 0;
+    color: white;
+    background: rgb(108, 117, 125);
+    transition: background 0.2s;
+    width: 15%;
+}
+
+.container input[type='submit']:hover{
+    background: rgba(108, 117, 125, 0.774);
+}
+
+.container input[type='submit']:active{
+    background: rgb(0, 34, 54);
+}
+
+form{
+    overflow: hidden;
+    text-align: center;
+    margin: auto;
+    width: 70%;
+}
+
+.container input{
+    outline: none;
+    border: none;
+    height: 50px;
+    margin: 0;
+    padding: 0 20px;
+    float: left;
+    font-family: "Berlin Sans FB";
+    font-size: 1.2rem;
+}
+
+
+.search{
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+.bgFilter{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.393);
+    position: absolute;
+    top:0;
+    left:0;
+}
+
+.brandSite{
+    font-family: "Berlin Sans FB";
+    position: absolute;
+    font-size: 30px;
+    top:0;
+    left:0;
+    padding: 2%;
+    cursor: pointer;
+    text-shadow: 2px 2px 2px black;
+}
+
+.brand{
+    color: rgb(206, 212, 218);
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+@media(max-width: 770px){
+    .brandSite{
+        font-size:5.5vw;
+        padding: 4%;
+    }
+
+    form{
+        width: 90%;
+    }
+
+}
+
+@media(max-width: 1150px){
+    .container input[type='text']{
+        width: 65%;
+    }
+    .container input[type='submit']{
+        width: 22%;
+    }
+}
